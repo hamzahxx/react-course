@@ -1,4 +1,5 @@
 import React from "react";
+import Logo from "./Logo"
 import PropTypes from "prop-types";
 
 export default function Navbar(props) {
@@ -10,7 +11,7 @@ export default function Navbar(props) {
             href="/"
             className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
           >
-            <img src="{props.siteLogo}" alt="" />
+            <Logo />
             <span className="fs-4 ps-1">{props.title}</span>
           </a>
 
