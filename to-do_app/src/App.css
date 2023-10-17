@@ -8,3 +8,13 @@
 #defaultHome {
     min-height: 100vh;
 }
+.custom-nav-button{
+    border: 1px solid black;
+    box-shadow: 2px 2px 0 black;
+}
+.custom-nav-button:hover{
+    box-shadow: 3px 3px 0 black;
+}
+.custom-nav-button:focus{
+    outline: none;
+}
