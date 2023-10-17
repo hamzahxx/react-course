@@ -1,21 +1,46 @@
 import React from "react";
-import Logo from "./Logo"
+import Logo from "./Logo";
 import PropTypes from "prop-types";
 
 export default function Navbar(props) {
   return (
-    <div>
-      <div className="container">
-        <header className="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-          <a
-            href="/"
-            className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
-          >
+    <div className={props.color}>
+      <nav className="navbar navbar-expand-md">
+        <div className="container py-3 mb-4 border-bottom">
+          <a className="navbar-brand" href="#">
             <Logo />
             <span className="fs-4 ps-1">{props.title}</span>
           </a>
-
-          <ul className="nav nav-pills">
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div
+            className="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div className="offcanvas-header">
+              <h5 className="offcanvas-title" id="offcanvasNavbarLabel">
+                <Logo />
+                <span className="fs-4 ps-1">{props.title}</span>
+              </h5>
+              <button
+                type="button"
+                className="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div className="offcanvas-body d-flex justify-content-end">
+            <ul className="nav nav-pills">
             <li className="nav-item">
               <a
                 href="/"
@@ -46,8 +71,10 @@ export default function Navbar(props) {
               </a>
             </li>
           </ul>
-        </header>
-      </div>
+            </div>
+          </div>
+        </div>
+      </nav>
     </div>
   );
 }

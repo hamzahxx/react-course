@@ -1,12 +1,15 @@
 import './App.css';
 import Navbar from "./components/Navbar";
 
-function App() {
+function defaultApp() {
   return (
     <div>
-      <Navbar title="WolFit"/>
+      <Navbar color="bg-main" title="WolFit"/>
+      <div id="defaultHome" className="bg-main">
+
+      </div>
     </div>
   );
 }
 
-export default App;
+export default defaultApp;
