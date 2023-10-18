@@ -1,5 +1,6 @@
 import './App.css';
 import Navbar from "./components/Navbar";
+import TodoInput from './components/TodoInput';
 
 const Project = {
   name: "To-Do-Do"
@@ -7,10 +8,10 @@ const Project = {
 
 export default function defaultApp() {
   return (
-    <div>
+    <div className="bg-main">
       <Navbar color="bg-main" title={Project.name}/>
-      <div id="defaultHome" className="bg-main">
-        
+      <div id="defaultHome" className="container">
+        <TodoInput />
       </div>
     </div>
   );
