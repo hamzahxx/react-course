@@ -9,7 +9,7 @@ const Project = {
 export default function defaultApp() {
   return (
     <div className="bg-main">
-      <Navbar color="bg-main" title={Project.name}/>
+      <Navbar title={Project.name}/>
       <div id="defaultHome" className="container">
         <TodoInput />
       </div>

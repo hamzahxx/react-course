@@ -1,12 +1,12 @@
-.nav-link{
-    color: black;
+#defaultHome {
+    height: 88.4vh;
 }
 .bg-main{
     background-color: #fde8e8;
     color: #0e0101;
 }
-#defaultHome {
-    min-height: 100vh;
+.nav-link{
+    color: black;
 }
 .custom-nav-button{
     background-color: #fde8e8;

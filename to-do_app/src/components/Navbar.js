@@ -4,8 +4,7 @@ import PropTypes from "prop-types";
 
 export default function Navbar(props) {
   return (
-    <div className={props.color}>
-      <nav className="navbar navbar-expand-md fixed-top">
+      <nav className="navbar navbar-expand-md">
         <div className="container">
           <a className="navbar-brand border-bottom border-dark p-0 my-2" href="/">
             <span className="me-1">
@@ -72,7 +71,6 @@ export default function Navbar(props) {
           </div>
         </div>
       </nav>
-    </div>
   );
 }
 

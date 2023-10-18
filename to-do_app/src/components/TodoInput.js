@@ -2,7 +2,6 @@ import React from "react";
 
 export default function TodoInput() {
   return (
-    <div>
       <div className="input-group mb-3">
         <input
           type="text"
@@ -13,6 +12,5 @@ export default function TodoInput() {
           Pass it
         </button>
       </div>
-    </div>
   );
 }
