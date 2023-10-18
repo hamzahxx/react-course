@@ -3,18 +3,34 @@
 }
 .bg-main{
     background-color: #fde8e8;
+    color: #0e0101;
 }
-
 #defaultHome {
     min-height: 100vh;
 }
 .custom-nav-button{
+    background-color: #fde8e8;
+    padding: 3px 12px;
+    border-radius: 15%;
     border: 1px solid black;
     box-shadow: 2px 2px 0 black;
+    transition: ease 0.5s;
 }
 .custom-nav-button:hover{
-    box-shadow: 3px 3px 0 black;
+    box-shadow: 4px 4px 0 black;
 }
-.custom-nav-button:focus{
-    outline: none;
+.nav-link{
+    transition: ease 0.5s;
+    color: grey;
+    border-bottom: 1px solid transparent;
+    margin: 0 15px;
+}
+.nav-link:hover{
+    font-size: larger;
+}
+@media only screen and (min-width: 769px ) {
+    .nav-link:hover{
+        font-size: large;
+        border-color: #0e0101;
+    }
 }

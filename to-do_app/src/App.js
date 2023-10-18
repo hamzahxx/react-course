@@ -2,7 +2,7 @@ import './App.css';
 import Navbar from "./components/Navbar";
 
 const Project = {
-  name: "WolFit"
+  name: "To-Do-Do"
 }
 
 export default function defaultApp() {
